@@ -71,6 +71,7 @@ header.header::after {
 .eurosecur img {
     width: 50%; /* Ajuste la taille de l'image */
     height: auto;
+    align-items: center;
 }
 
 .secure-text {
@@ -281,7 +282,7 @@ ul li::before {
     border-radius: 10px;
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 15px;
     font-size: 14px;
     border: #b1b1b1;
 }
@@ -290,7 +291,7 @@ ul li::before {
     width: 25px;
     height: 25px;
     position: relative;
-    top: -10px;
+    top: -7px;
 }
 .button {
     display: inline-block;
@@ -337,7 +338,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 100%;
     margin: auto;
 }
 
