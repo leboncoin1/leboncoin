@@ -1,0 +1,502 @@
+/* styles.css */
+
+/* Header */
+header.header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centre les éléments horizontalement */
+    width: 100%;
+    padding: 10px;
+    position: relative;
+    background-color: #ffffff;
+}
+
+
+
+/* Barre de progression */
+.progress-bar {
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, #ff6600 35%, #9c9b9b 33%);
+    margin-top: 1px;
+}
+
+
+
+
+/**
+header.header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;  
+    background: linear-gradient(to right, #ff6600 35%, #9c9b9b 33%);
+}**/
+
+.logo {
+    height: 45%;
+}
+
+.separator {
+    margin: 5px 10px 5px 10px;
+    font-size: 20px;
+    color: #ff6600;
+    /* font-weight: bold;*/
+    height: 40px;
+    font-size: 30px;
+}
+
+.secure-textP2 {
+    color: #161616;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.securite {
+    display: flex;
+    align-items: center;
+}
+
+.eurosecur {
+    display: flex;
+    align-items: center;
+    /*gap: 1px;  Espace entre l'image et le texte */
+}
+
+.eurosecur img {
+    width: 50%; /* Ajuste la taille de l'image */
+    height: auto;
+}
+
+.secure-text {
+    font-size: 22px;
+    font-weight: bold;
+    color:#ff6600 ;
+}
+
+
+
+
+
+
+
+
+
+.secure-text::before {
+    content: "";
+    display: inline-block;
+    width: 20px; /* Ajustez selon la taille de l'icône */
+    height: 20px;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAA1CAYAAAA3Q3kVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMA'); /* Remplacer par le base64 de l'image */
+    background-size: contain;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+
+/* Global header */
+.header {
+    background-color: #200d8b;
+    color: rgb(187, 26, 26);
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+}
+/* Fixe le header en haut de la page */
+/* Fixe le header en haut de la page */
+.header {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px; /* Ajuste la hauteur selon ton besoin */
+    background: white; /* Fond visible */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #ccc;
+    z-index: 1000; /* S'assure qu'il est au-dessus des autres éléments */
+}
+
+/* Empêche le contenu d'être caché sous le header */
+body {
+    margin: 0;
+    padding-top: 70px; /* Ajuste selon la hauteur du header */
+}
+
+
+/* Ajoute un peu d'espace pour tester le défilement */
+.main {
+    padding: 20px;
+}
+
+
+
+/* Main Section */
+.main {
+    font-family: Arial, sans-serif;
+    max-width: 1200px; /* Délimite la largeur du contenu */
+    margin: 0 auto; /* Centre horizontalement */
+    padding: 0rem 10rem 0rem 10rem; /* Ajoute de l'espace intérieur */
+    background-color: #ffff;
+    color: #333;
+}
+
+
+
+
+    
+
+/* Intro Section */
+.intro {
+    text-align: left;
+    padding: 1rem 0rem 0rem 0rem;
+    margin: 0rem 0rem 0rem 0rem;
+    border-radius: 8px;
+}
+
+.intro .avatar img {
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+}
+
+/* Guarantee Section */
+.guarantee h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #ff6f00;
+}
+
+.guarantee-option {
+    display: flex;
+    align-items: flex-start;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 15px 15px 50px 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    background: #fff;
+    font-family: Arial, sans-serif;
+    position: relative;
+    
+}
+
+
+
+
+.guarantee-option input[type="radio"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+    margin-top: 5px;
+}
+
+.guarantee-option label {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+}
+.popular-badge {
+    background-color: #ff6600; /* Couleur orange */
+    color: #ffffff; /* Texte blanc */
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 15px; /* Arrondi des bords */
+    display: inline-block;
+}
+
+.popular-badge {
+    background: #ff6600;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+
+.guarantee-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.price {
+    color: #ff6600;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+/* Lists */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    padding: 5px 0;
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+ul li::before {
+    content: "✔";
+    color: #ccc;
+    
+    margin-right: 8px;
+}
+
+
+
+.container {
+    margin: 0;
+    padding: 10px 5px 10px 10px    ;
+    text-align: left;
+}
+.info-box {
+    background-color: #d9dadbde;
+    padding: 13px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 14px;
+    border: #b1b1b1;
+}
+
+.info-box img {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: -10px;
+}
+.button {
+    display: inline-block;
+    background-color: #ff6200;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.button:hover {
+    background-color: #e55a00;
+}
+.links a {
+    display: block;
+    color: #434344;
+    text-decoration: none;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 12px;
+    
+}
+
+.partner {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+.partner img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+
+footer {
+    background-color: #1f2937;
+    color: white;
+    padding: 1.5rem 10rem 1.5rem 10rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-link {
+    color: #ffff;
+    
+    font-size: 14px;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.rating-text {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.rating-bars {
+    display: flex;
+    margin-right: 10px;
+}
+
+.bar {
+    width: 15px;
+    height: 15px;
+    background-color: #4e8d65;
+    margin-right: 2px;
+}
+
+.bar.half {
+    background: linear-gradient(to right, #37b364 50%, #d1d5db 50%);
+}
+
+.reviews {
+    margin-right: 5px;
+}
+
+.trustpilot {
+    color: white;
+    
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+/* page index2 */
+
+
+        
+        
+       /** .container1 {
+            max-width: 700px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        }**/
+
+
+        /* Section Paiement Sécurisé */
+
+        .arrow-container {
+            position: fixed;
+            top: 50%;
+            left: 10px; /* Positionnée à gauche */
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+        .arrow {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border-left: 4px solid #4a6fa5;
+            border-bottom: 4px solid #4a6fa5;
+            transform: rotate(135deg);
+        }
+.secure-payment-section {
+    text-align: center;
+    background-color: #fff;
+    
+    border-radius: 8px;
+    width: 100%;
+    max-width: 800px;
+
+}
+
+/* Image */
+.secure-image {
+    width: 100%;
+    max-width: 500px; /* Ajustez selon le besoin */
+    display: block;
+    
+}
+        h1 {
+            font-size: 22px;
+            color: #333;
+        }
+        .steps {
+            position: relative;
+            margin-top: 20px;
+        }
+        /* Ligne verticale principale */
+        .steps::before {
+            content: "";
+            position: absolute;
+            left: 24px; /* Centré sur les numéros */
+            top: 0;
+            width: 2px;
+            height: 100%;
+            background-color: #ddd;
+            z-index: 0;
+        }
+        .step {
+            display: flex;
+            align-items: flex-start;
+            position: relative;
+            margin-bottom: 20px;
+            padding-left: 50px;
+        }
+        .step-number {
+            background-color: #ff6f00;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            position: absolute;
+            left: 10px;
+            z-index: 1;
+        }
+        /* Création des interruptions sur la ligne */
+        .step::before {
+            content: "";
+            position: absolute;
+            left: 24px;
+            top: 0;
+            width: 2px;
+            height: 100%;
+            background-color: #f9f9f9; /* Cache une partie de la ligne */
+            z-index: 1;
+        }
+        
+      
+   
