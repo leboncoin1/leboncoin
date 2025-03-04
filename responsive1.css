@@ -1,0 +1,221 @@
+/* Styles généraux pour s'assurer que tout s'adapte bien */
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    
+    box-sizing: border-box;
+}
+
+/* Assurer que les images ne dépassent pas leur conteneur */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) { /* Tablettes */
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo {
+        display: none; /* MASQUER */
+    }
+.separator { display: none;
+
+}
+
+    .securite {
+        margin-top: 10px;
+    }
+
+    .main {
+    
+        padding: 0rem 7rem 0rem 7rem; /* Ajoute de l'espace intérieur */
+    }
+
+    .guarantee {
+      /*   display: flex;
+       flex-direction: column;*/
+        align-items: center;
+    }
+
+    .guarantee-option {
+        width: 90%; /* Réduire la largeur pour éviter les débordements */
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 800px) { /* Smartphones */
+    .header {
+       /*  flex-direction: column;*/
+        align-items: center;
+        padding: 10px;
+    }
+
+    .logo {
+        display: none; /* Réduire la taille du logo */
+    }
+.separator { display: none;
+
+}
+
+    
+        .main {
+    
+            padding: 0rem 3rem 0rem 3rem; /* Ajoute de l'espace intérieur */
+    }
+
+    .intro {
+        text-align: left;
+    }
+
+    .avatar img {
+        width: 100px; /* Ajustement de l'avatar */
+    align-items: left;
+    }
+
+    .guarantee {
+       /*  flex-direction: column;*/
+        align-items: center;
+    }
+
+    .guarantee-option {
+        width: 95%; /* Meilleure adaptabilité */
+        padding: 10px;
+    }
+
+    .guarantee-header {
+        display: flex;
+       /* flex-direction: column;*/
+        align-items: center;
+        text-align: center;
+    }
+
+    .price {
+        font-size: 1.2em;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+
+  
+
+    .info-box img {
+        width: 50px;
+        margin-bottom: 10px;
+    }
+
+
+    .info-box {
+        background-color: #d9dadbde;
+        padding: 6px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        gap: 7px;
+        font-size: 14px;
+        border: #b1b1b1;
+        text-align: left;
+    }
+    
+    .info-box img {
+        width: 25px;
+        height: 25px;
+        position: relative;
+        top: -5px;
+    }
+
+    .button {
+        display: inline-block;
+        background-color: #ff6200;
+        color: white;
+        padding: 4px 8px 4px 8px;
+        text-align: center;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        margin-top: 10px;
+
+
+
+
+
+
+    .button {
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+        font-size: 1.1em;
+    }
+
+   
+    .footer-container { display: none;
+
+    }
+    
+
+    
+   
+    
+
+}
+}
+
+@media screen and (max-width: 800px) {
+    .footer-container .rating {
+        display: none !important;
+    }
+
+    .footer-container {
+        text-align: center;
+    }
+}
+
+
+/* Conteneur Trustpilot */
+.trustpilot-container {
+    display: none  !important; /* Masqué par défaut */
+  
+    
+    /* padding: 8px 15px;
+    border-radius: 8px;*/
+    display: flex;
+    align-items: right !important;
+    gap: 0px;
+}
+
+/* Style du texte Trustpilot */
+.trustpilot-label {
+    font-weight: bold;
+    background-color: #009c59;
+    color: white;
+    padding: 10px 5px 10px 25px;
+    
+    border-top-left-radius: 5px;  /* Arrondi en haut à droite */
+    border-bottom-left-radius: 5px; /* Arrondi en bas à droite */
+
+}
+
+/* Style du nombre d'avis */
+.trustpilot-reviews {
+    background-color: white;
+    color: #1e2428;
+    padding: 10px 10px;
+    border-top-right-radius: 5px;  /* Arrondi en haut à droite */
+    border-bottom-right-radius: 5px; /* Arrondi en bas à droite */
+
+    font-weight: bold;
+}
+
+/* Afficher Trustpilot SEULEMENT sur mobile */
+@media screen and (max-width: 800px) {
+    .trustpilot-container {
+        display: flex !important;
+    }
+}

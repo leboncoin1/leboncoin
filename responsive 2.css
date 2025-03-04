@@ -1,0 +1,157 @@
+/* Styles généraux pour s'assurer que tout s'adapte bien */
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Assurer que les images ne dépassent pas leur conteneur */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* RESPONSIVITÉ */
+
+/* Tablettes (jusqu'à 1024px) */
+@media screen and (max-width: 1024px) { 
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .separator {
+        display: none; /* Masquer le séparateur inutile sur petits écrans */
+    }
+
+    .securite {
+        margin-top: 10px;
+    }
+
+    .main {
+        padding: 10px;
+    }
+
+    .container1 {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .steps {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step {
+        width: 90%;
+        text-align: center;
+    }
+
+    .Card {
+        width: 90%;
+        margin-left: 10px;
+        padding: 20px;
+    }
+}
+
+/* Smartphones (jusqu'à 800px) */
+@media screen and (max-width: 800px) { 
+    
+    
+
+    .main {
+    
+        padding: 0rem 5rem 0rem 5rem; /* Ajoute de l'espace intérieur */
+    
+
+    .secure-payment-section {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .secure-image {
+        width: 90%; /* Ajustement de l'image principale */
+    }
+
+    .secure-textP2 {
+        font-size: 1em;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .container1 {
+        width: 95%;
+        text-align: center;
+    }
+
+    .steps {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .Card {
+        width: 50%;
+        
+        padding: 20px;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+        border-radius: 15px;
+        
+        margin-bottom: 10px;
+       
+        padding: 10px;
+       
+     position: relative;
+        margin-left: 50px;
+        margin-right: 40px;
+
+
+
+
+    }
+
+    .info-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info-box img {
+        width: 50px;
+        margin-bottom: 10px;
+    }
+
+    .button {
+        display: inline-block;
+        background-color: #ff6200;
+        color: white;
+        padding: 4px 8px 4px 8px;
+        text-align: center;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    /* Cacher la section des avis Trustpilot sur mobile */
+    .rating {
+        display: none;
+    }
+}
+}
