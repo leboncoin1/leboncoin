@@ -62,7 +62,7 @@ img {
     
         .main {
     
-            padding: 0rem 3rem 0rem 3rem; /* Ajoute de l'espace intérieur */
+            padding: 0rem 1.5rem 0rem 1.5rem; /* Ajoute de l'espace intérieur */
     }
 
     .intro {
@@ -163,13 +163,13 @@ img {
         
     }
 
-        .links a {
+        .links a, .condition {
             display: block;
-            color: #434344;
+            color:#8f8d8d;
             text-decoration: none;
             margin-bottom: 2px;
             font-weight: bold;
-            font-size: 10px;
+            font-size: 8px;
             line-height: 1;
 
 
