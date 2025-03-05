@@ -69,7 +69,7 @@ img {
     
         padding: 0rem 5rem 0rem 5rem; /* Ajoute de l'espace intérieur */
     
-
+    }
     .secure-payment-section {
         text-align: center;
         margin-bottom: 15px;
@@ -79,15 +79,7 @@ img {
         width: 90%; /* Ajustement de l'image principale */
     }
 
-    .imgretour {
-    
-        position: absolute;
-        left: 5rem;
-        top: 1.5rem; /* Ajuste selon ton besoin */
-     
-      
-  }
-
+   
     
     .secure-textP2 {
         font-size: 1em;
@@ -167,4 +159,12 @@ img {
         display: none;
     }
 }
-}
+
+
+
+
+
+
+
+
+
