@@ -81,6 +81,32 @@ header.header::after {
     align-items: center;
 }
 
+
+@media (min-width: 200px) and (max-width: 700px){
+    
+    
+
+    
+.eurosecur img {
+    
+    
+    position: absolute;
+    left: 6rem;
+    top: 1rem;
+
+
+
+
+}
+
+
+
+
+ }
+
+
+
+
 .secure-text {
     font-size: 22px;
     font-weight: bold;
@@ -204,6 +230,47 @@ body {
 
 
 
+.guarantee-option1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 15px 15px 10px 15px;
+    margin: 20px 20px 20px 50px;
+    width: 90%; /* Utiliser un pourcentage plus adapté */
+    background: #fff;
+    font-family: Arial, sans-serif;
+    position: relative;
+   
+    margin-left: 50px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+
+@media (min-width: 200px) and (max-width: 790px){
+    
+    .guarantee-option1 {
+        
+        
+        padding: 15px 15px 10px 15px;
+        margin: 20px 20px 20px 40px;
+        width: 80%; /* Utiliser un pourcentage plus adapté */
+        position: relative;
+       
+            }
+
+
+
+ }
+
+
+
+
+
+
+
 .guarantee-option input[type="radio"] {
     margin-right: 10px;
     transform: scale(1.2);
@@ -300,10 +367,8 @@ ul li::before {
 
 
 
-.mesdiv a {
-    line-height: 1;
-    font-size: 44px;
-}
+
+
 .info-box img {
     width: 25px;
     height: 25px;
@@ -324,18 +389,22 @@ ul li::before {
 .button:hover {
     background-color: #e55a00;
 }
-.links a {
+
+
+
+.links a, .condition {
     display: block;
-    color: #434344;
-    text-decoration: none;
-    margin-bottom: 5px;
+    color: #8f8d8d;
+ margin-bottom: 5px;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1;
     
 
     
 }
+
+.textebonasavoir{ font-size: 11px;}
 
 .partner {
     margin-top: 20px;
@@ -346,6 +415,14 @@ ul li::before {
     vertical-align: middle;
     margin-right: 5px;
 }
+
+
+.copyright{
+    
+}
+
+
+
 
 
 footer {
@@ -360,9 +437,10 @@ footer {
     flex-direction: row;
     align-items: center;
     max-width: 100%;
-    gap: 20px;
+    gap: 10px;
+    margin-left: -120px;
     
-    gap: 40px;
+   
 }
 
 .footer-link {
@@ -498,10 +576,41 @@ footer {
       
   }
 
+
+  @media (min-width: 200px) and (max-width: 790px){
+    
+    
+
+    .imgretour {
+    
+        position: absolute;
+        left: 1rem;
+        top: 1.5rem; /* Ajuste selon ton besoin */
+     
+      
+  }
+
+
+
+
+ }
+
+
+
+
+
+
+
+
+
+
+
 div.imgretour img.imagdirection{ width: 23px; height: auto;
     margin-left: 0;
     
 }
+
+
 /* Image */
 .secure-image {
     width: 100%;
