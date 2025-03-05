@@ -14,13 +14,13 @@ img {
 
 /* Responsive Design */
 @media screen and (max-width: 1024px) { /* Tablettes */
-    .header {
+   /* .header {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
-
+*/
     .logo {
         display: none; /* MASQUER */
     }
@@ -50,14 +50,10 @@ img {
 }
 
 @media screen and (max-width: 800px) { /* Smartphones */
-    .header {
-       /*  flex-direction: column;*/
-        align-items: center;
-        padding: 10px;
-    }
+  
 
     .logo {
-        display: none; /* Réduire la taille du logo */
+        display: none; /* masquer */
     }
 .separator { display: none;
 
@@ -111,6 +107,22 @@ img {
         margin-bottom: 10px;
     }
 
+.welcome-message  {
+    font-size: 14px;
+   
+}
+
+
+
+.secure-textP2 {
+    color: #161616;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: none;
+}
+
 
     .info-box {
         background-color: #d9dadbde;
@@ -119,7 +131,7 @@ img {
         display: flex;
         flex-direction: row;
         gap: 7px;
-        font-size: 14px;
+        font-size: 12px;
         border: #b1b1b1;
         text-align: left;
     }
@@ -141,23 +153,49 @@ img {
         text-decoration: none;
         font-weight: bold;
         margin-top: 10px;
+    }
 
 
+    .bouton2{
+        display: flex;
+        justify-content: center; /* Centre horizontalement */
+        align-items: center; /* Centre verticalement */
+        
+    }
 
+        .links a {
+            display: block;
+            color: #434344;
+            text-decoration: none;
+            margin-bottom: 2px;
+            font-weight: bold;
+            font-size: 10px;
+            line-height: 1;
 
 
 
     .button {
-        width: 100%;
+        
         text-align: center;
         padding: 15px;
         font-size: 1.1em;
     }
 
-   
-    .footer-container { display: none;
+    footer {
+        background-color: #1f2937;
+        
+        color: white;
+        padding: 0rem 5rem 0rem 5rem;
 
+
+        display: flex;
+    align-items: center !important;
+    justify-content: center;
+    width: 100vw;  /* Assurez-vous que le parent prend toute la largeur */
+    height: 100vh; /* Prend toute la hauteur de l'écran */
+    overflow: visible !important; /* Empêche la coupure */
     }
+ 
     
 
     
@@ -172,22 +210,23 @@ img {
         display: none !important;
     }
 
-    .footer-container {
-        text-align: center;
+    .footer-container .copyright {
+        text-align: left;
+        font-style: 56px;
     }
-}
 
 
-/* Conteneur Trustpilot */
+
+ 
 .trustpilot-container {
-    display: none  !important; /* Masqué par défaut */
+    display: none  !important; 
   
+    text-decoration: none !important;
+   
     
-    /* padding: 8px 15px;
-    border-radius: 8px;*/
-    display: flex;
-    align-items: right !important;
+    
     gap: 0px;
+    
 }
 
 /* Style du texte Trustpilot */
@@ -195,8 +234,9 @@ img {
     font-weight: bold;
     background-color: #009c59;
     color: white;
-    padding: 10px 5px 10px 25px;
-    
+    padding: 5px 5px 5px 20px;
+    text-decoration: none !important;
+   
     border-top-left-radius: 5px;  /* Arrondi en haut à droite */
     border-bottom-left-radius: 5px; /* Arrondi en bas à droite */
 
@@ -206,7 +246,10 @@ img {
 .trustpilot-reviews {
     background-color: white;
     color: #1e2428;
-    padding: 10px 10px;
+    text-decoration: none !important;
+    align-items: center;
+    justify-items: center;
+    padding: 5px 5px;
     border-top-right-radius: 5px;  /* Arrondi en haut à droite */
     border-bottom-right-radius: 5px; /* Arrondi en bas à droite */
 
@@ -217,5 +260,39 @@ img {
 @media screen and (max-width: 800px) {
     .trustpilot-container {
         display: flex !important;
+        font-size: 12px;
     }
+
+    span.trustpilot-label { 
+        text-decoration: underline !important;
+  text-decoration-color: #009c59 !important;
+        
+    }
+
+    span.trustpilot-reviews  { 
+        text-decoration: underline !important;
+  text-decoration-color: #ffff !important;
+        
+    }
+
+    .step::before {
+        content: "";
+        position: absolute;
+        left: 24px;
+        top: 0;
+        width: 2px;
+        height: 65%;
+        background-color: #f9f9f9; /* Cache une partie de la ligne */
+        z-index: 1;
+    }
+
+
+
+}
+
+@media screen and (min-width: 801px) {
+    .trustpilot-container {
+        display: none !important;
+       
+    }}
 }
